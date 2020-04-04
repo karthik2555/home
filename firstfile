@@ -1,2 +1,3 @@
-testfile
-welcome karthik
+whoami
+date 
+echo "welcome"
