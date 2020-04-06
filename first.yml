@@ -1,10 +1,13 @@
 ---
  - name: first job
    hosts: all
+   
    tasks:
+   
     - name: my first git tasks
       commad: date
       register: out
+      
     - name: print output 
       debug:
         msg: " ansible playbook from git and date is {{ out.stdout }} "
