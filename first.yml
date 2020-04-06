@@ -3,7 +3,7 @@
     hosts: all
     tasks:
     - name: linux command
-      command: date
+      command: touch /tmp/file123
       register: out
     - name: my newjob
       debug:
