@@ -7,8 +7,8 @@
        path: /tmp/file123
        mode: '0644'
       
-      register: out
+      
     - name: my newjob
       debug:
-        msg: " Welcome to anisble karthik {{ ansible_hostname }} and today date is  {{out.stdout }} "
+        msg: " Welcome to anisble karthik {{ ansible_hostname }} "
 
