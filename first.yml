@@ -1,14 +1,8 @@
 ---
- - name: first job
-   hosts: all
-   
-   tasks:
-   
-    - name: my first git tasks
-      commad: date
-      register: out
-      
-    - name: print output 
+  - name: testjob
+    hosts: all
+    tasks:
+    - name: my newjob
       debug:
-        msg: " ansible playbook from git and date is {{ out.stdout }} "
-        
+        msg: " Welcome to anisble karthik {{ ansible_hostname }} "
+
