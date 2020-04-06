@@ -2,7 +2,10 @@
   - name: testjob
     hosts: all
     tasks:
+    - name :linux command
+      command: date
+      register: out
     - name: my newjob
       debug:
-        msg: " Welcome to anisble karthik {{ ansible_hostname }} "
+        msg: " Welcome to anisble karthik {{ ansible_hostname }} and today date is  {{out.stdout }} "
 
