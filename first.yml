@@ -2,7 +2,7 @@
   - name: testjob
     hosts: all
     tasks:
-    - name :linux command
+    - name: linux command
       command: date
       register: out
     - name: my newjob
