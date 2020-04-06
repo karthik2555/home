@@ -5,6 +5,7 @@
     - name: linux command
       file: 
        path: /tmp/file123
+       state: touch
        mode: '0644'
       
       
