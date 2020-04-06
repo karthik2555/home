@@ -3,7 +3,10 @@
     hosts: all
     tasks:
     - name: linux command
-      command: touch /tmp/file123
+      file: 
+       path: /tmp/file123
+       mode: '0644'
+      
       register: out
     - name: my newjob
       debug:
